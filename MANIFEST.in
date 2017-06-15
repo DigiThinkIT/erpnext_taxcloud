@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erpnext_taxcloud *.css
+recursive-include erpnext_taxcloud *.csv
+recursive-include erpnext_taxcloud *.html
+recursive-include erpnext_taxcloud *.ico
+recursive-include erpnext_taxcloud *.js
+recursive-include erpnext_taxcloud *.json
+recursive-include erpnext_taxcloud *.md
+recursive-include erpnext_taxcloud *.png
+recursive-include erpnext_taxcloud *.py
+recursive-include erpnext_taxcloud *.svg
+recursive-include erpnext_taxcloud *.txt
+recursive-exclude erpnext_taxcloud *.pyc
