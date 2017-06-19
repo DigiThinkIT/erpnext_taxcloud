@@ -24,7 +24,7 @@ def set_sales_tax(doc, method):
 
 	data = {
 		"apiLoginId": taxcloud_settings.api_login_id,
-		"customerID": hashlib.sha224(doc.customer).hexdigest()[:12],
+		"customerID": frappe.generate_hash(),
 		"origin": {
 			"Address1": company_address.address_line1,
 			"Address2": company_address.address_line2,
