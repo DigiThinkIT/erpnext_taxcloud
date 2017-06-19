@@ -18,10 +18,6 @@ def set_sales_tax(doc, method):
 	if not shipping_address.country == "United States":
 		return
 
-	if (frappe.db.get_value("Quotation", doc.name, "address_display") == doc.address_display) \
-		and (frappe.db.get_value("Quotation", doc.name, "total") == doc.total):
-			return
-
 	data = {
 		"apiLoginId": taxcloud_settings.api_login_id,
 		"customerID": frappe.generate_hash(),
